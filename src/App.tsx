@@ -7,6 +7,7 @@ import FormUncontrolled from "./exercises/FormUncontrolled";
 import StateDemo1 from "./exercises/StateDemo1";
 import StateDemo2 from "./exercises/StateDemo2";
 import StateDemo3 from "./exercises/StateDemo3";
+import UseEffect from "./exercises/UseEffect";
 
 
 export default function App() {
@@ -70,6 +71,13 @@ export default function App() {
                 <StateDemo3 title="State Demo3" />
                 </div>
                 ) : null}
+
+            {selectedView === "UseEffect" ? (
+              <div>
+                <UseEffect title="UseEffect" />
+              </div>
+            ) : null}
+
                     
             {/**Add the exercise components you create for each exercise using the key you used for the matching button  */}
           </div>
@@ -115,6 +123,10 @@ const Buttons = (props: ButtonProps) => {
          
        <button className="btn-w100" onClick={() => handleSelected("StateDemo3")}>
         StateDemo3 (Update Array)
+      </button>
+
+      <button className="btn-w100" onClick={() => handleSelected("UseEffect")}>
+        UseEffect
       </button>
     </>
   );
