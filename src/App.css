@@ -1,38 +1,128 @@
-.App {
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.exercise-style {
+  flex: 3;
+  padding: 10px;
+  width: 800px;
+  text-align: left;
+  border-left: 2px solid black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.header-style {
+  border-bottom: solid 2px blue;
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.outer-div-style {
   display: flex;
+  width: 100%;
+  text-align: center;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+
+button {
+  background-color: #008cba; /* Green */
+  border: none;
+  border-radius: 4px;
+
+
+  color: white;
+  padding: 5px 5px;
+  margin: 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+}
+
+
+button:hover {
+  background-color: lightblue;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.btn-w100 {
+  width: 100%;
+}
+.title {
+  font-size: x-large;
+  color: darkgreen;
+  margin-bottom: 3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.info {
+  font-style: italic;
+  color: darkgreen;
+  margin-bottom: 8px;
+}
+
+
+.imageButton {
+  border: none;
+  background: none;
+}
+
+
+.imageButton:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Light grey background on hover */
+}
+
+
+.simple-table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+  border-collapse: collapse;
+}
+
+
+.simple-table th,
+.simple-table td {
+  padding: 0.25rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+
+.simple-table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+
+.simple-table tbody + tbody {
+  border-top: 2px solid #dee2e6;
+}
+
+
+.box {
+  border: solid brown;
+  border-radius: 5px;
+  margin: 10px;
+  margin-top: 5px;
+  background-color: bisque;
+  text-align: center;
+}
+
+
+.root-box {
+  border: solid brown;
+  background-color: orange;
+  border-radius: 5px;
+  margin: 10px;
+  text-align: center;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
