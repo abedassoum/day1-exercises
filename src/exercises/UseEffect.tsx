@@ -34,7 +34,4 @@ export default function UseEffectDemo({ title }: BaseProps) {
 }
 
 
-function setCount(arg0: (prev: any) => any) {
-  throw new Error("Function not implemented.");
-}
 
