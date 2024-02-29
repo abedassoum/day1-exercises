@@ -22,7 +22,7 @@ export default function FetchDemo1({ title }: BaseProps) {
   //Use this to fetch the next user when the "Next User" button is clicked
   //Make sure you understand why we don't need useEffect here
   const fetchNextUser = async () => {
-    const nextUser = user?.id + 1 <= 15 ? user.id + 1 : 1;
+    const nextUser = (user?.id ?? 0) + 1 <= 15 ? (user?.id ?? 0) + 1 : 1;
     //Do not set call setUserId here it will cause an extra render
     setLoading(true);
     const theUser = await fetchUser(nextUser);
