@@ -29,6 +29,7 @@ function Root() {
     </div>
   );
 }
+
 function A() {
   return (
     <div className="box" style={{ width: topWidth }}>
@@ -37,6 +38,7 @@ function A() {
     </div>
   );
 }
+
 function B() {
  const { role } = useRole();
   return (
