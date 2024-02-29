@@ -1,0 +1,29 @@
+.outer {
+    width: 100%;
+    text-align: center;
+    border: solid 10x gray;
+    padding: 5;
+    margin-bottom: 10px;
+  }
+  
+  
+  .outer-user-table {
+    display: flex;
+    width: 100%;
+  }
+  
+  
+  .user-table {
+    flex: 3;
+    margin-right: 20px;
+    border: solid 1px gray;
+  }
+  
+  
+  .user-form {
+    flex: 2;
+      border: solid 1px gray;
+      padding: 10px;
+      text-align: left
+  }
+  
