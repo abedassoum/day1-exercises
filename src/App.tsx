@@ -10,6 +10,7 @@ import StateDemo3 from "./exercises/StateDemo3";
 import UseEffect from "./exercises/UseEffect";
 import FetchDemo from "./exercises/FetchDemo";
 import LiftingState from "./exercises/LiftingState";
+import ContextDemoApp from "./exercises/ContextDemo";
 
 
 export default function App() {
@@ -92,6 +93,12 @@ export default function App() {
                     </div>
                     ) : null}
 
+                    {selectedView === "ContextDemo" ? (
+                      <div>
+                        <ContextDemoApp title="Context Demo" />
+                        </div>
+                        ) : null}
+
 
                     
             {/**Add the exercise components you create for each exercise using the key you used for the matching button  */}
@@ -150,6 +157,10 @@ const Buttons = (props: ButtonProps) => {
 
       <button className="btn-w100" onClick={() => handleSelected("LiftingState")}>
         Lifting State
+      </button>
+
+      <button className="btn-w100" onClick={() => handleSelected("ContextDemo")}>
+        Context Demo
       </button>
     </>
   );

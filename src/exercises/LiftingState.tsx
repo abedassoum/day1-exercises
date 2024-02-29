@@ -30,7 +30,7 @@ export default function LiftingState({ title }: BaseProps) {
       const newUsers = users.map((u) => (u.id === user.id ? user : u));
       setUsers(newUsers);
     } else {
-      const newUser = { ...user, id: getNextId(users) };
+      const newUser = { ...user, id: getNextId() };
       setUsers([...users, newUser]);
     }
   };
